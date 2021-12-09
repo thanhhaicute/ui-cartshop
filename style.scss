@@ -1,0 +1,133 @@
+body {
+    margin          : 0;
+    padding         : 0;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.main {
+    width           : 320px;
+    height          : 400px;
+    background-color: #272d40;
+    margin          : 120px auto;
+    border-radius   : 20px;
+
+    .img {
+        padding: 10px;
+
+        .cart {
+            width      : 20px;
+            margin-left: 100px;
+        }
+
+        .heart {
+            width       : 20px;
+            margin-right: 150px;
+
+        }
+    }
+
+    .img-sneaker {
+        margin-top     : -40px;
+        margin-left    : 65px;
+        object-fit     : cover;
+        object-position: center;
+
+        .sneaker {
+            width           : 200px;
+            transition      : 0.5s;
+            transition-delay: 0.25s;
+        }
+    }
+
+
+    .body {
+        // margin-top: 300px;
+        // visibility: hidden;
+
+        .title {
+            margin-top : 60px;
+            margin-left: 60px;
+
+            .title_name {
+                font-size  : 25px;
+                font-weight: 900;
+                color      : green;
+            }
+
+            .title_price {
+                font-size: 18px;
+                margin   : 10px 75px;
+                color    : white;
+            }
+        }
+
+        .size {
+            margin-left: 46px;
+            margin-top : 20px;
+            display    : flex;
+
+            .size_title {
+                color    : white;
+                font-size: 19px;
+            }
+
+            .size_number {
+                padding         : 4px;
+                margin-left     : 20px;
+                width           : 17px;
+                height          : 16px;
+                background-color: black;
+                color           : white;
+                border-radius   : 10px;
+                cursor          : pointer;
+            }
+
+        }
+
+        .buy {
+            margin-top : 33px;
+            margin-left: 75px;
+
+            .buynow {
+                border-radius   : 20px;
+                width           : 80px;
+                height          : 25px;
+                cursor          : pointer;
+                background-color: green;
+                color           : white;
+                border          : none;
+                transition      : 0.5s;
+            }
+
+            .buynow:hover {
+                transform: scale(0.9);
+            }
+
+            .addcart {
+                border-radius   : 20px;
+                width           : 80px;
+                height          : 25px;
+                cursor          : pointer;
+                background-color: green;
+                color           : white;
+                border          : none;
+
+                transition: 0.5s;
+            }
+
+            .addcart:hover {
+                transform: scale(0.9);
+            }
+
+        }
+    }
+
+    // .body:hover{
+    //     transform: ;
+    // }
+
+}
+
+.main .body .img-sneaker .sneaker:hover {
+    transform: rotate(45deg);
+}
